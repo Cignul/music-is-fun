@@ -11,15 +11,22 @@ function drawSongs(results) {
   for (let i = 0; i < results.length; i++) {
     const song = results[i];
     template += `
-    <div style="outline: 1px solid black" class="col-3">
-    <p${song.title}</p>
-    <p${song.albumArt}</p>
-    <p>${song.artist}</p>
-    <p>${song.collection}</p>
-    <p>${song.price}</p>
-    <p>${song.preview}</p>
-    <img src="${song.previewUrl}" alt="somethingelse">
+    <div class="col-3">
+    <div class="card-body" style="outline: 1px solid black" class="col-3">
+        <img class="card-img-top" src="${song.albumArt}" alt="album art">
+        <h5 class="card-title ">${song.title}</h5>
+        <p>${song.artist}</p>
+        <p>${song.collection}</p>
+        <p>${song.price}</p>
+
+
+        <a href="# " class="btn btn-primary ">purchase</a>
+        <audio controls>
+            <source src="${song.preview}" type="">
+
+        </audio>
     </div>
+</div>
     `
   }
   //  song attributes 
