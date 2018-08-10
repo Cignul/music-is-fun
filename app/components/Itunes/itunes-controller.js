@@ -12,7 +12,7 @@ function drawSongs(results) {
     const song = results[i];
     template += `
     <div class="col-3">
-    <div class="card-body" style="outline: 1px solid black" class="col-3">
+    <div class="card-body" style="outline: 2px solid black">
         <img class="card-img-top" src="${song.albumArt}" alt="album art">
         <h5 class="card-title ">${song.title}</h5>
         <p>${song.artist}</p>
@@ -20,7 +20,7 @@ function drawSongs(results) {
         <p>${song.price}</p>
 
 
-        <a href="# " class="btn btn-primary ">purchase</a>
+        <a href="# " class="btn btn-primary card-body ">purchase</a>
         <audio controls>
             <source src="${song.preview}" type="">
 

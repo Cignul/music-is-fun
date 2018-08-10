@@ -11,67 +11,27 @@
 </head>
 
 <body>
-    <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+    <form class="d-flex justify-content-center form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
         <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
         <div class="form-group">
             <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
             <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
         </div>
     </form>
-    <div class="container-fluid">
+    <div class="shadow-sm p-3 mb-5 bg-white rounded "></div>
+    <div class="container-fluid bg-secondary">
         <div id="songs" class="row">
-            <div class="col-3">
-                <div class="card-body" style="width: 18rem; outline: 1px solid black" class="col-3">
-                    <img class="card-img-top" src="${song.albumArt}" alt="album art">
-                    <h5 class="card-title ">${song.title}</h5>
-                    <p>${song.artist}</p>
-                    <p>${song.collection}</p>
-                    <p>${song.price}</p>
 
-
-                    <a href="# " class="btn btn-primary ">purchase</a>
-                    <audio controls>
-                        <source src="${song.preview}" type="">
-
-                    </audio>
-                </div>
-            </div>
-            <div class="col-3">
-                <div class="card-body" style="width: 18rem; outline: 1px solid black">
-                    <img class="card-img-top" src="${song.albumArt}" alt="album art">
-                    <h5 class="card-title ">${song.title}</h5>
-                    <p>${song.artist}</p>
-                    <p>${song.collection}</p>
-                    <p>${song.price}</p>
-
-
-                    <a href="# " class="btn btn-primary ">purchase</a>
-                    <audio controls>
-                        <source src="${song.preview}" type="">
-
-                    </audio>
-                </div>
-            </div>
         </div>
     </div>
-
-    <!-- <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="pinkfloyd-darksideofthemoon-thumbnail.jp" alt="Card image cap">
-                <div class="card-body ">
-                    <h5 class="card-title ">songname(get)</h5>
-                    <p class="card-text ">pull artist name</p>
-                    <a href="# " class="btn btn-primary ">purchase</a>
-                    <audio controls>
-                        <source src="" type="">
-                        <source src="" type="">
-                    </audio>
-
-                </div>
-            </div> -->
     </div>
     </div>
 
 
+    </div>
+    </div>
+
+    <div class="shadow-sm p-3 mb-5 bg-white rounded "></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js "></script>
     <script type="module" src="main.js"></script>
 
