@@ -6,8 +6,33 @@ const itunesService = new ItunesService()
 
 function drawSongs(results) {
   console.log(results)
-  //YOUR CODING STARTS HERE
+  let template = ''
 
+  for (let i = 0; i < results.length; i++) {
+    const song = results[i];
+    template += `
+    <div style="outline: 1px solid black" class="col-3">
+    <p${song.title}</p>
+    <p${song.albumArt}</p>
+    <p>${song.artist}</p>
+    <p>${song.collection}</p>
+    <p>${song.price}</p>
+    <p>${song.preview}</p>
+    <img src="${song.previewUrl}" alt="somethingelse">
+    </div>
+    `
+  }
+  //  song attributes 
+  // this.title
+  // this.albumArt
+  // t
+  // his.artist
+  // this.collection
+  // this.price
+  // this.preview
+
+
+  document.getElementById('songs').innerHTML = template
 
 
 }
@@ -29,7 +54,6 @@ class ItunesController {
   }
 
 
+
 }
-
-
 export default ItunesController
